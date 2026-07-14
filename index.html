@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RG Digital — Carteira de Identidade Digital</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rawline-webfont@5.2.0/latin.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <img class="topbar__logo" src="assets/logo2-crop.png" alt="Carteira de Identidade">
+  <img class="topbar__logo topbar__logo--lg" src="assets/logo.png" alt="gov.br">
+</header>
+
+<main class="layout">
+
+  <section class="panel preview-panel">
+    <div class="card-stage">
+      <div class="id-card id-card--example" id="idCardExample">
+        <div class="id-card__face id-card__front">
+          <img class="id-card__full-img" src="assets/rg-front.png" alt="Frente de documento fictício de exemplo">
+        </div>
+        <div class="id-card__face id-card__back">
+          <img class="id-card__full-img" src="assets/rg-back.png" alt="Verso de documento fictício de exemplo">
+        </div>
+      </div>
+    </div>
+    <p class="stage-hint">Clique no botão "Virar cartão" ou toque no cartão para ver a frente/verso.</p>
+
+    <div class="actions">
+      <button id="flipBtn" class="btn btn--ghost" type="button">Virar cartão</button>
+      <button id="downloadBtn" class="btn btn--primary" type="button">Baixar como imagem</button>
+    </div>
+  </section>
+
+</main>
+
+<section class="seal">
+  <img class="seal__img" src="assets/selo-crop.png" alt="Documento de Identificação — Este documento digital pode ser utilizado para sua identificação, não sendo necessária a apresentação de documento complementar, conforme Decreto nº 10.977, de 23 de fevereiro de 2022.">
+</section>
+
+<footer class="footer">
+  <img class="footer__img" src="assets/rodape-crop.png" alt="Assinado digitalmente por GOV.BR. Verifique a autenticidade da assinatura eletrônica em https://validar.iti.">
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
